@@ -7,11 +7,31 @@ Coding 1
 <html>
 	<head>
 		<meta charset="UTF-8"/>
-		<title>Tip Calculator</title>
+		<title>Tip Generator</title>
 		<link href="styles.css" type="text/css" rel="stylesheet">
 	</head>
 
 	<body>
-		
+		<h1>Tip Generator</h1>
+		<p>Please enter your bill amount.
+			<br />$
+			<input type="text" id="billNumber" placeholder="Type in a value...">
+		</p>
+
+		<p>Please enter the amount you would like to tip.
+			<br />
+			<input type="text" id="tipPercent" placeholder="Type in a percentage..."> %
+		</p>
+
+		<p>Please enter the number of people in your party.
+			<br />
+			<input type="text" id="numOfPeople" placeholder="Type in a value...">
+		</p>
+
+		<button type="button" onclick="calculatePercentage();">Generate</button>
+
+		<p id="tip"></p>
+
+		<script href="calculator.js"></script>
 	</body>
 </html>
